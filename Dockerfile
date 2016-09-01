@@ -13,6 +13,7 @@ ADD run-apache.sh /run-apache.sh
 RUN chmod -v +x /run-apache.sh
 
 LABEL BZComponent testing
+LABEL Name testing
 LABEL Version 0.0.1
 LABEL Release 7
 LABEL Architecture x86_64
