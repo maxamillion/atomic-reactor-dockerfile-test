@@ -1,9 +1,9 @@
 FROM fedora:latest
-MAINTAINER http://fedoraproject.org/wiki/Cloud
+MAINTAINER Adam Miller <maxamillion@fedoraproject.org>
 
 RUN dnf -y update && dnf clean all
 RUN dnf -y install httpd && dnf clean all
-RUN curl http://maxamillion.so/resume > /var/www/html/resume
+RUN curl https://maxamillion.sh/resume > /var/www/html/resume
 RUN echo "Apache" >> /var/www/html/index.html
 
 EXPOSE 80
